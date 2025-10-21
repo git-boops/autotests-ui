@@ -4,29 +4,83 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .pclass{
-            color: green;
-            font-size: 50px;
+        .pclass{ color: red; font-size: 30px; }
+        #ullist {  font-size: 25px;}
 
-        }
+        .td1-td3{color:blue; font-size:25px;}
+        div.market > a{color:blue; font-weight:bold;}
 
-        #ullist {
-        font-size: 25px;
-        }
+        #h1-text{color:green; font-size:25px;}
+        #h2-text{color:orange; font-size:25px;}
+        #h6-text{color:red; font-size:25px;}
 
+        a:hover{color: red; font-wight:bold;}
+        ul li {color:green; font-size:25px;}
+        input[type="text"] {background-color: grey;}
+        input[type="text"]:hover {background-color: green;}
+        li::marker{color:red;}
+        ul>li:nth-child(2){color: red}
     </style>
 </head>
 <body>
 
-<div>
+<div class = "market">
+<a href ="https://www.dns-shop.ru/">DNS</a>
+    <h1 id = "h1-text">h1 text</h1>
+    <h2 id = "h2-text">h text</h2>
+    <h6 id = "h6-text">h6 text</h6>
 
-    <ul id = "ullist">
+    <ul>
         <li>item1</li>
         <li>item2</li>
         <li>item3</li>
-    </ul>>
+            <ol>
+            <li>item4</li>
+            <li>item5</li>
+            </ol>
+    </ul>
     <p class="pclass">asdfkasdf;asdfa's;dkf;asdkf;asdfasdf d">asdfffffasdfasfasdfasdf</p>
 
+    <table style="alighn: centre">
+        <thead><tr>заголовок табилицы</tr></thead>
+        <tbody>
+        <tr class = "row1 td1-td3">
+            <td>ячейка1</td>
+            <td>ячейка2</td>
+            <td>ячейка3</td>
+        </tr>
+        <tr class = "row1">
+            <td>ячейка4</td>
+            <td>ячейка5</td>
+            <td>ячейка6</td>
+        </tr>
+        </tbody>
+    </table>
+        <p class = "pclass">Применение нового перечня локализованных машин для такси в его текущем виде
+            может оставить многие города и тарифные классы без
+            притока новых автомобилей.</p>
+
+</div>
+
+        <div class="nth">
+            <p>1</p>
+            <p>2</p>
+            <h4>3</h4>
+            <h5>4</h5>
+            <p>5</p>
+
+        </div>
+
+<div class = "news">
+    <a href ="https://www.rbc.ru">Новости</a>
+    <h2 id = "h2-text">h text</h2>
+    <form action="https://www.rbc.ru">
+        <textarea placeholder="введите текс" required></textarea>
+        <input type="text" placeholder="text">
+        <input type ="email">
+        <button type="submit">отправить</button>
+    </form>
+    
 </div>
 
 </body>
